@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sunanda & Akash</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            padding: 6rem 2rem 2rem;
+            background: #D39A8C;
+            color: white;
+        }
+
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+            max-width: 1600px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 4/3;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: #f8f8f8;
+        }
+
+        .gallery-item img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item iframe {
+            position: absolute;
+            top: -60%;
+            left: -25%;
+            width: 150%;
+            height: 200%;
+            border: none;  
+            pointer-events: none;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-item .iframeclass {
+            position: absolute;
+            top: -60%;
+            left: -10%;
+            width: 150%;
+            height: 200%;
+            border: none;  
+            pointer-events: none;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .back-btn:hover {
+            background: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .project-gallery {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 1rem;
+                padding: 1rem;
+            }
+            
+            .project-header {
+                padding: 5rem 1rem 1rem;
+            }
+            
+            .project-header h1 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .project-gallery {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .gallery-item {
+                min-height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html#projects" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+
+    <div class="project-header">
+        <h1>Sunanda X Akash</h1>
+    </div>
+
+    <div class="project-gallery">
+        <div class="gallery-item">
+            <!-- <img src="../images/ADP03615.jpg" alt="Wedding Photo 1"> -->
+             <iframe src="https://drive.google.com/file/d/1TJT-j3i5cesjss4c9G-LyhGh1-N_QU_h/preview" width="100%" height="100%" allow="autoplay" ></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/APR09199.jpg" alt="Wedding Photo 2"> -->
+             <iframe src="https://drive.google.com/file/d/1XdT45m1eByqUghgu6AP6e02caahfJfYD/preview" allow="autoplay" width="100%" height="100%" ></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/ADP03739.jpg" alt="Wedding Photo 3"> -->
+             <iframe src="https://drive.google.com/file/d/1ejfbUiqcoXcpeIRohvPTsHI3ef71u9L5/preview" width="100%" height="100%" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/ADP03804.jpg" alt="Wedding Photo 4"> -->
+             <iframe src="https://drive.google.com/file/d/1j9n_s1Iu6OkQsYzX5rZd5MzQFXVaz7WY/preview" width="100%" height="100%" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/ADP03796.jpg" alt="Wedding Photo 5"> -->
+             <iframe src="https://drive.google.com/file/d/1f7Ik3pnGHmPa-vinkO3WmbaxVoEmxjAl/preview" width="100%" height="100%" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/ADP03642.jpg" alt="Wedding Photo 6"> -->
+             <iframe src="https://drive.google.com/file/d/10qk8VxctTDkzS3KmSybF7s5kIvwM1BTR/preview" width="100%" height="100%" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/APR09237.jpg" alt="Wedding Photo 1"> -->
+             <iframe src="https://drive.google.com/file/d/1NX8vf2NfU253-Z8oKMvDpOeKJ6bQYkd_/preview" width="100%" height="100%" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/ADP03663.jpg" alt="Wedding Photo 2"> -->
+             <iframe class="iframeclass" src="https://drive.google.com/file/d/1zpreKLGhFa0JQrlVr-T1ud2rA6hi2L9y/preview" width="100%" height="100%" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/APR09221.jpg" alt="Wedding Photo 3"> -->
+             <iframe src="https://drive.google.com/file/d/1q8iX0FXUUUlcUwC8irl0L0RS2iJP_81k/preview" width="100%" height="100%" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/ADP03835.jpg" alt="Wedding Photo 4"> -->
+             <iframe src="https://drive.google.com/file/d/1ZOuYwLvrUWqk1spUrJ_4PPRBjOPPHOju/preview" frameborder="0" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/APR09278.jpg" alt="Wedding Photo 5"> -->
+             <iframe src="https://drive.google.com/file/d/1doNQ8WXL88ydx-tZzpR3MGTPtyXJnAGo/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/APR09208.jpg" alt="Wedding Photo 6"> -->
+             <iframe src="https://drive.google.com/file/d/1w2BjyqOTllTCvYcLY6yYcQkSnsQzXXQu/preview" allow="autoplay"></iframe>
+        </div>
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html>

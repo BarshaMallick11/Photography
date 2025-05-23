@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anindita X Rajat - Wedding Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .project-header {
+            text-align: center;
+            padding: 6rem 2rem 2rem;
+            background: #D39A8C;
+            color: white;
+        }
+
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .project-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            aspect-ratio: 4/3;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+         .gallery-item iframe {
+            position: absolute;
+            top: -40%;
+            left: -40%;
+            width: 180%;
+            height: 200%;
+            border: none;  
+            pointer-events: none;
+        }
+
+        .gallery-item .up {
+            position: absolute;
+            top: -85%;
+            left: -40%;
+            width: 180%;
+            height: 200%;
+            border: none;  
+            pointer-events: none;
+        }
+
+        .gallery-item .right {
+            position: absolute;
+            top: -40%;
+            left: -10%;
+            width: 180%;
+            height: 200%;
+            border: none;  
+            pointer-events: none;
+        }
+
+        .back-btn {
+            position: fixed;
+            top: 2rem;
+            left: 2rem;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .back-btn:hover {
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <a href="../index.html#projects" class="back-btn">
+        <i class="fas fa-arrow-left"></i> Back to Projects
+    </a>
+
+    <div class="project-header">
+        <h1>Anindita X Rajat</h1>
+    </div>
+
+    <div class="project-gallery">
+        <!-- Add your images here -->
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/ADP08301.jpg" alt="Wedding Photo 1"> -->
+             <iframe src="https://drive.google.com/file/d/1OtiB3-64LOhZu-Vd2ON7J9IjwKVdE6rf/preview" allow="autoplay" ></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/ADP08310.jpg" alt="Wedding Photo 2"> -->
+             <iframe src="https://drive.google.com/file/d/1TBvvI-igcU1PclSQ4AVm0xM-ckvGV1Yz/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/ADP08314.jpg" alt="Wedding Photo 3"> -->
+             <iframe src="https://drive.google.com/file/d/1Tu-q1eE-9GAEZPqqD2OqAIL_79MQtAaJ/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/APR01228.jpg" alt="Wedding Photo 1"> -->
+             <iframe class="right" src="https://drive.google.com/file/d/1I28m9DNYFwSxVh8c8rNXGKryqUgRp6--/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/APR01236.jpg" alt="Wedding Photo 2"> -->
+             <iframe src="https://drive.google.com/file/d/1gWteIXCqFzOaSWSLNTBfMmRjjTbMTmcw/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/APR01308.jpg" alt="Wedding Photo 3"> -->
+             <iframe src="https://drive.google.com/file/d/1nagvzanSix2w5DqWRSc_DFLeEcfDVnYg/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_8368.jpg" alt="Wedding Photo 1"> -->
+            <iframe class="up" src="https://drive.google.com/file/d/1Ywq1y4_udkooxG2wcUf3-UMxY5lW8zLf/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_8380.jpg" alt="Wedding Photo 2"> -->
+             <iframe class="up" src="https://drive.google.com/file/d/1T3kr4-2Q48AyVwktt4XpAqjT8k91yj99/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_8381.jpg" alt="Wedding Photo 3"> -->
+             <iframe src="https://drive.google.com/file/d/1GBz81DFVAJzvljPkdrLHZDeZlut5GkzZ/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_8397.jpg" alt="Wedding Photo 1"> -->
+            <iframe src="https://drive.google.com/file/d/12_jUTQ2u8sNm1iOwDrAwFWHYlIHyAzMs/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_8636.jpg" alt="Wedding Photo 2"> -->
+             <iframe src="https://drive.google.com/file/d/15-w1IeYvAUR_uCn60tupZqJvEH3WPXLZ/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_8642.jpg" alt="Wedding Photo 3"> -->
+             <iframe src="https://drive.google.com/file/d/1G8gEaH3pxce2wOc1BbTq7USFKbL_zYKT/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_9233.jpg" alt="Wedding Photo 1"> -->
+             <iframe src="https://drive.google.com/file/d/1vLpzs4lalvMFprBk6RNRZfbzCYl5r_Ic/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_8867.jpg" alt="Wedding Photo 2"> -->
+             <iframe src="https://drive.google.com/file/d/1nbq2BNLK82-ayYvm4L3v_ECNXFbpOVA9/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_8876.jpg" alt="Wedding Photo 3"> -->
+             <iframe src="https://drive.google.com/file/d/161pCIAfMdh0sDPiZVD_L0cP0VFiyKhtx/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_9217.jpg" alt="Wedding Photo 1"> -->
+             <iframe src="https://drive.google.com/file/d/1ljxSG41MLza6pxcJPYo1tivVBAkTAkRt/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_9223.jpg" alt="Wedding Photo 2"> -->
+             <iframe src="https://drive.google.com/file/d/1uK7PfSjxS46-fvHKMJOmA9Eeyx4VTjvd/preview" allow="autoplay"></iframe>
+        </div>
+        <div class="gallery-item">
+            <!-- <img src="../images/Rimpa/DSC_9455.jpg" alt="Wedding Photo 1"> -->
+             <iframe src="https://drive.google.com/file/d/1-4oPZ4gLdWhYG04Bpn_SGV48QZ8qpuq7/preview" allow="autoplay"></iframe>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+
+    <script src="../script.js"></script>
+</body>
+</html> 
